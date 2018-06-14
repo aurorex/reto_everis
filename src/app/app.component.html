@@ -5,14 +5,30 @@
     <a href="/" class="navbar-brand">Bienvenido(a)</a>
 </nav> -->
 <app-header></app-header>
-<app-products></app-products>
+<main class="container-fluid">
+<div class="row">
+<div class="col-md-2 comp">
+    <a routerLink="/" routerLinkactive="active">Home</a><br>
+    <a routerLink="login">Login</a> <br>
+    <a routerLink="register">Register</a>
+<hr>
+
+</div>
+<div class="col-md-5">
+    <router-outlet></router-outlet>
+</div>
+<div class="col-md-3">
+    <app-products></app-products>
+</div>
+</div>
+</main>
+
+<!-- <app-sidemenu></app-sidemenu> -->
+
+<app-home></app-home>
 <!-- <main-app></main-app> -->
 
 <!-- Probando el el single page -->
-<a routerLink="/" routerLinkactive="active">Home</a>
-<a routerLink="login">Login</a>
-<a routerLink="register">Register</a>
-<hr>
-<router-outlet></router-outlet>
+
 
 

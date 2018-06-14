@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Route } from '@angular/router'
 
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { FormsModule } from '@angular/forms'
@@ -25,6 +26,7 @@ import { ProductComponent } from './components/publication/publications/product.
 
 // Services 
 import { ProductService } from './services/project.service';
+import { PeticionService } from './server/peticion.service'
 import { HomeComponent } from './singlepage/home/home.component';
 import { LoginComponent } from './singlepage/login/login.component';
 import { RegisterComponent } from './singlepage/register/register.component'
@@ -69,6 +71,7 @@ const routeConfig:Route[] = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(routeConfig),
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     FormsModule,
@@ -76,6 +79,7 @@ const routeConfig:Route[] = [
     BrowserAnimationsModule
   ],
   providers: [
+    PeticionService,
     ProductService
   ],
   bootstrap: [AppComponent]

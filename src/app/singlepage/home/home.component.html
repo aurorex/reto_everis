@@ -1,3 +1,16 @@
-<p>
-  home works!
-</p>
+<div class="movie-wrapper" >
+  <div class="search">
+      <input type="text" placeholder="Film arayın..." (keyup.enter)="GetMovies(f.value)" #f>
+      <i class="fa fa-search" aria-hidden="true"></i>
+  </div>
+  <div class="clearfix"></div>
+  <div class="thumbnail" *ngFor="let movie of movies">
+      <a href="">
+          <img src="https://lumiere-a.akamaihd.net/v1/images/open-uri20150422-12561-wo8ofx_1ffb98d9.jpeg?region=0,0,300,450">
+          <h1>Pirates of Caribbean</h1>
+          <h2>Action, Adventure, Fantasy</h2>
+          <h3>{{movies.title}}</h3>
+          <div class="rate">7.6</div>
+      </a>
+  </div>
+</div>
