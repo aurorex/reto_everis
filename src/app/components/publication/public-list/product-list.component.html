@@ -6,7 +6,11 @@
         <tr *ngFor="let product of productList" >
           <td>{{product.name}}</td>
           <td>{{product.category}}</td>
-          <td>
+          <td>{{product.price}}</td>
+          <td>{{product.location}}</td>
+          <td> 
+            
+            <div>
             <a class="btn btn-secondary text-white" (click)="onEdit(product)">
               <i class="far fa-edit"></i>  
               Editar
@@ -15,6 +19,7 @@
                 <i class="fas fa-trash-alt"></i>  
                 Delete
             </a>
+          </div>
           </td>
         </tr>
       </tbody>
