@@ -1,14 +1,14 @@
-<div class="card">
+<div class="card p">
   <div class="card-body">
-    <h6 class="text-center">Lista de Publicación</h6>
-    <table class="table table-sm table-hover">
+    <h6 class="text-center">Tus Proyectos</h6>
+    <table class="table  table-hover">
       <tbody>
-        <tr *ngFor="let product of productList" >
-          <td>{{product.name}}</td>
-          <td>{{product.category}}</td>
-          <td>{{product.price}}</td>
-          <td>{{product.location}}</td>
-          <td> 
+        <ul *ngFor="let product of productList" >
+          <li>{{product.name}}</li>
+          <li>{{product.category}}</li>
+          <li>{{product.price}}</li>
+          <li>{{product.location}}</li>
+          <!-- <td>  -->
             
             <div>
             <a class="btn btn-secondary text-white" (click)="onEdit(product)">
@@ -20,8 +20,8 @@
                 Delete
             </a>
           </div>
-          </td>
-        </tr>
+          <!-- </td> -->
+        </ul>
       </tbody>
     </table>
   </div>
