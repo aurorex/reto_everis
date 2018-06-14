@@ -26,12 +26,30 @@ import { ProductComponent } from './components/publication/publications/product.
 // Services 
 import { ProductService } from './services/project.service';
 import { HomeComponent } from './singlepage/home/home.component';
-import { LoguinComponent } from './singlepage/loguin/loguin.component';
+import { LoginComponent } from './singlepage/login/login.component';
 import { RegisterComponent } from './singlepage/register/register.component'
+import { NotfoundComponent } from './singlepage/notfound/notfound.component';
+import { HeaderComponent } from './singlepage/header/header.component';
+import { SidemenuComponent } from './singlepage/sidemenu/sidemenu.component';
 // import { Route } from '@angular/compiler/src/core';
 
 const routeConfig:Route[] = [
- 
+  {
+    path:'',
+    component:HomeComponent
+  },
+   {
+     path:'login',
+     component:LoginComponent
+   },
+  {
+    path:'register',
+    component:RegisterComponent
+  },
+  {
+    path:'**',
+    component:NotfoundComponent
+  }
 ];
 
 @NgModule({
@@ -42,12 +60,15 @@ const routeConfig:Route[] = [
     ProductListComponent,
     ProductComponent,
     HomeComponent,
-    LoguinComponent,
-    RegisterComponent
+    LoginComponent,
+    RegisterComponent,
+    NotfoundComponent,
+    HeaderComponent,
+    SidemenuComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule,
+    RouterModule.forRoot(routeConfig),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     FormsModule,
