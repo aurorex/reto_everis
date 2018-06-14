@@ -1,5 +1,5 @@
-<div class="mp">
-<div class="card mt-5">
+
+<div class="card mt-3 mb-3">
   <div class="card-body">
     <form #productForm="ngForm" (ng-submit)="onSubmit(productForm)">
       <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="productService.selectedProduct.$key"/>
@@ -56,4 +56,4 @@
     </form>
   </div>
 </div>
-</div>
+

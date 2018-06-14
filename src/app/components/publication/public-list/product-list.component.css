@@ -1,3 +1,10 @@
 .p {
     outline:  1px solid red;
 }
+li {
+    list-style: none;
+    text-decoration: none;
+}
+ul {
+    background: rgb(124, 147, 192);
+}

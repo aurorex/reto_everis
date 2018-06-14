@@ -1,3 +1,10 @@
 header {
     background: rgb(131, 166, 0);
 }
+.cont-img {
+    width: 190px;
+    height: 100px;
+}
+.cont-img img {
+    width: 100%;
+}

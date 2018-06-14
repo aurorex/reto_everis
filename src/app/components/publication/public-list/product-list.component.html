@@ -1,17 +1,17 @@
-<div class="card p">
-  <div class="card-body">
+<div class="card ">
+  <div class="card-body ">
     <h6 class="text-center">Tus Proyectos</h6>
     <table class="table  table-hover">
       <tbody>
-        <ul *ngFor="let product of productList" >
+        <ul *ngFor="let product of productList" class="text-white card">
           <li>{{product.name}}</li>
           <li>{{product.category}}</li>
           <li>{{product.price}}</li>
           <li>{{product.location}}</li>
           <!-- <td>  -->
             
-            <div>
-            <a class="btn btn-secondary text-white" (click)="onEdit(product)">
+          <div class="mt-2 mb-2 text-center">
+            <a class="btn btn-secondary text-white mr-2" (click)="onEdit(product)">
               <i class="far fa-edit"></i>  
               Editar
             </a>
