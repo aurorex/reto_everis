@@ -2,20 +2,29 @@
 <app-header></app-header>
 <main class="container-fluid">
 <div class="row ">
-<div class="col-md-2  mt-3  ">
+<div class="col-md-3  mt-3  ">
 <nav class="card bg-white ">
-    <div class="card-body">
-            <a routerLink="/" routerLinkactive="active">Home</a><br>
-            <a routerLink="login">Integrate al Equipo</a> <br>
-            <a routerLink="register">Tus Beneficios</a><br>
-            <a routerLink="register">Conocenos</a>
+    <div class="card-body h-text">
+          <div>
+                <a routerLink="/" routerLinkactive="active">Home</a>
+          </div>
+          <div>
+                <a routerLink="login">Integrate al Equipo</a>
+          </div>
+          <div>
+                <a routerLink="register">Tus Beneficios</a>
+          </div>
+          <div>
+                <a routerLink="register">Conocenos</a>
+          </div>
+             
     </div>
     
 </nav>
 <hr>
 
 </div>
-<div class="col-md-7 mt-4 ">
+<div class="col-md-6 mt-4 ">
     <router-outlet></router-outlet>
 </div>
 <div class="col-md-3">
