@@ -21,6 +21,13 @@
           <input (keyup)="pass(inputPassword)" #inputPassword type="text" class="form-control" placeholder="pasword" aria-label="Recipient's username" aria-describedby="basic-addon2">
           <br>
         </div>
+        <div class="input-group mb-3 .select">
+          <select class="custom-select " id="inputGroupSelect01">
+            <option selected>¿jefe de proyecto?</option>
+            <option value="1">si</option>
+            <option value="o">no</option>
+          </select>
+        </div>
         <br>
         <div class="col-12 text-center">
           <button class="btn btn-lg btn-dark" (click)="ngOnInit()">INGRESAR</button>

@@ -11,7 +11,7 @@ import  {map} from 'rxjs/operators';
 export class MainComponent implements OnInit {
   public userEmail:string ;
   public password:string ;
-  public liderGroup:boolean = false;
+  public perfil:boolean = false;
 
   itemsUrl:any;
   urlApi:any = 'http://backend-everis-retoeveris.a3c1.starter-us-west-1.openshiftapps.com/usuario';
@@ -41,7 +41,7 @@ export class MainComponent implements OnInit {
           this.itemsUrl = itemsUrl;
           console.log(this.itemsUrl);
           for(let i=0; i<itemsUrl.length;i++){
-            if(itemsUrl[i].email === this.userEmail && itemsUrl[i].password === this.password ){
+            if(itemsUrl[i].email === this.userEmail && itemsUrl[i].password === this.password){
               console.log('eres integrante');
               
             }

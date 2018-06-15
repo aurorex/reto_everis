@@ -9,15 +9,12 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
   public coment:string;
-  
+  // public arrComent:string;
+
   coments(comentario){
     this.coment = comentario.value;
     console.log(this.coment);
   }
-
-  // publish(){
-  //   arrComent = this.coment
-  // }
 
   todos: [
     { 
