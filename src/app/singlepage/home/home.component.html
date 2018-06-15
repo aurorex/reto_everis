@@ -1,8 +1,4 @@
 <div class="movie-wrapper" >
-  <div class="search">
-      <input type="text" placeholder="Film arayın..." (keyup.enter)="GetMovies(f.value)" #f>
-      <i class="fa fa-search" aria-hidden="true"></i>
-  </div>
   <div>
     <figure>
         <img src="http://www.rrhhdigital.com/userfiles/everis-consejo-directivo.jpg" alt="img">
@@ -18,9 +14,12 @@
         <i class="far fa-comment-alt" (click)="inpuText()">Comentar</i>
       </div>
     </div>
-     <div class="p-2">
-            <input class="form-control " type="text">
+    <div class="container">
+     <div class="p-2 row">
+            <input class="form-control col-sm-10 col-8 col-md-10" type="text">
+             <button class="btn btn-outline-primary col-3 col-sm-2 col-md-2">Publicar</button>
      </div>
+    </div>
   </div>
   
 </div>

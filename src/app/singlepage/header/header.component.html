@@ -3,6 +3,10 @@
     <img  src="http://mutbcn.com/uploads/clientes/7/logo/MUT_WEB_CLIENTES_LOGO_EVERIS_B.png" alt="everis">
   </figure>
   <h2 class="text-white">Bienvenidos</h2>
+  <div class="search">
+      <input class="form-control " type="text" placeholder="search..." (keyup.enter)="GetMovies(f.value)" #f>
+      <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
+  </div>
   <div class="membership ">
     <a href="#" class="btn-login mr-4 text-white" ><i class="fas fa-user-circle"></i>Login</a>
     <a href="#" class="btn-register text-white">Register</a>
