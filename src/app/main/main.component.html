@@ -1,11 +1,42 @@
-<main>  
-  <div style="text-align:center">
+<main>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 slogan">
+          <img src="http://www.sisnet360.com/media/img/logo-everis.png" alt="">
+          <h1>Plataforma</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <section>
+    <div class="container container-btn">
+      <div class="row box-button">
+        <div class="col-12 text-center">
+          <input (keyup)="email(inputEmail)" #inputEmail type="text" class="form-control" placeholder="username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <br>
+          <input (keyup)="pass(inputPassword)" #inputPassword type="text" class="form-control" placeholder="pasword" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <br>
+        </div>
+        <br>
+        <div class="col-12 text-center">
+          <button class="btn btn-lg btn-dark" (click)="ngOnInit()">INGRESAR</button>
+        </div>
+        <!-- <p [innerHTML]="itemsUrl['0'].name"></p> -->
+      </div>
+    </div>
+  </section>
+</main>
+  <!-- <div style="text-align:center">
     <h1>
       HOLA MUNDO
     </h1>
     <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
   </div>
-  <!-- <h1>Blog Posts</h1>
+  <h1>Blog Posts</h1>
 <div *ngIf="undefined === restItems">Loading...</div>
 <div *ngIf="undefined !== restItems">
   <ul>
@@ -14,6 +45,6 @@
   </ul>
 </div>
 <div [innerHTML]="selectedContent"></div> -->
-</main>
+
 
 
