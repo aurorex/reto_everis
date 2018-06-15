@@ -1,1 +1,22 @@
-
+.comp {
+    outline: 1px solid red;
+}
+.h-text a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+.h-text {
+    padding: 1.5%;
+}
+.h-text>div:hover {
+    background: rgba(127, 136, 5, 0.877);
+    
+}
+a:hover {
+    color: #fff;
+    margin: 2%;
+}
+main {
+    margin-top: 7%;
+}

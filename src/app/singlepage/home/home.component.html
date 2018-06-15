@@ -1,0 +1,32 @@
+<div class="movie-wrapper" >
+  <div>
+    <figure>
+        <img src="http://www.rrhhdigital.com/userfiles/everis-consejo-directivo.jpg" alt="img">
+    </figure>
+  </div>
+  <div class=" card cont-public mt-3" >
+    <div class="p-2">
+     <div class="cont-post pl-2">
+      <p> <i class="fas fa-user-alt"></i>{{name}}</p>
+      <p>{{project}}</p>
+    </div>
+      <div>
+        <i class="far fa-comment-alt" (click)="inpuText()" #comentarios>Comentar</i>
+      </div>
+    </div>
+    <div class="container">
+     <div class="p-2 row">
+        <input (keypress)="coments(input)" #input class="form-control col-sm-10 col-8 col-md-10" type="text">
+        <button (click)="publish()" class="btn btn-outline-primary col-3 col-sm-2 col-md-2">Publicar</button>
+        <!-- <div class="box-coment" [innerHTML]="coment.value"></div> -->
+     </div>
+    </div>
+  </div>
+  
+</div>
+<!-- <div>
+        <ul ngFor="let todo of todos">
+            <li>hola</li>
+            <li>{{todo.label}}</li>
+        </ul>
+    </div> -->

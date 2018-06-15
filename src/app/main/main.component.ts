@@ -4,7 +4,7 @@ import  {map} from 'rxjs/operators';
 
 
 @Component({
-  selector: 'app-main',
+  selector: 'main-app',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.css']
 })
