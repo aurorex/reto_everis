@@ -8,3 +8,6 @@ header {
 .cont-img img {
     width: 100%;
 }
+.navbar {
+    height: 90px;
+}

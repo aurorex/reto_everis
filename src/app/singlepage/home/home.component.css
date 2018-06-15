@@ -1,0 +1,13 @@
+
+.cont-public i {
+    color: rgba(49, 128, 49, 0.842) ;
+    cursor: pointer;
+}
+.cont-post {
+    border: 2px solid rgb(219, 214, 214);
+    padding-top: 2%;
+}
+figure img {
+    width: 100%;
+    height: 45vh;
+}

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PeticionService } from '../../server/peticion.service'
+import { HttpClient } from '@angular/common/http';
+// import { PeticionService } from '../../server/peticion.service'
 
 @Component({
   selector: 'app-home',
@@ -7,22 +8,51 @@ import { PeticionService } from '../../server/peticion.service'
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  movies;
 
-  constructor(private peticionService: PeticionService) { }
+  todos: [
+    { 
+    label: 'Bring Milk',
+    done:false,
+    priority:3 
+    },
+    { 
+      label: ' Milk',
+      done:true,
+      priority:3 
+      }
+  ];
 
-  ngOnInit() {
-  }
- 
-  GetMovies(title: string){
-    
+
+
+   name:string = '';
+   project:string = ''
+
+  constructor(private httpClient: HttpClient){}
+
+  // constructor(private peticionService: PeticionService) { }
+
+   ngOnInit() {
+    this.httpClient.get(`http://backend-everis-retoeveris.a3c1.starter-us-west-1.openshiftapps.com/usuario`)
+    .subscribe(
+     (results:any[]) => {
+       console.log(results)
+  
+        
+           this.name = results[0].name;
+           this.project = results[0].project;
+   }
+   
+  // api de perfiles https://randomuser.me/api/?results=10&seed=foobar
   
 
-     this.peticionService.GetAllMovies(title)
-      .subscribe(reps => {
-        console.log(reps)
-        this.movies = reps
-      })
+
+ 
+  )
+   
+  }
+
+  inpuText(){
+    console.log("aqui coments")
   }
 
 }

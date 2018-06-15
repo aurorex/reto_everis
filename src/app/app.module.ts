@@ -28,6 +28,7 @@ import { ProductComponent } from './components/publication/publications/product.
 import { ProductService } from './services/project.service';
 import { PeticionService } from './server/peticion.service'
 import { HomeComponent } from './singlepage/home/home.component';
+import { ComentComponent } from './singlepage/home/coment.component';
 import { LoginComponent } from './singlepage/login/login.component';
 import { RegisterComponent } from './singlepage/register/register.component'
 import { NotfoundComponent } from './singlepage/notfound/notfound.component';
@@ -62,6 +63,7 @@ const routeConfig:Route[] = [
     ProductListComponent,
     ProductComponent,
     HomeComponent,
+    ComentComponent,
     LoginComponent,
     RegisterComponent,
     NotfoundComponent,
