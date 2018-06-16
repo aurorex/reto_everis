@@ -36,6 +36,8 @@ import { RegisterComponent } from './singlepage/register/register.component'
 import { NotfoundComponent } from './singlepage/notfound/notfound.component';
 import { HeaderComponent } from './singlepage/header/header.component';
 import { SidemenuComponent } from './singlepage/sidemenu/sidemenu.component';
+import { Home2Component } from './home2/home2.component';
+import { CardComponent } from './card/card.component';
 // import { Route } from '@angular/compiler/src/core';
 
 const routeConfig:Route[] = [
@@ -70,7 +72,9 @@ const routeConfig:Route[] = [
     RegisterComponent,
     NotfoundComponent,
     HeaderComponent,
-    SidemenuComponent
+    SidemenuComponent,
+    Home2Component,
+    CardComponent
   ],
   imports: [
     BrowserModule,

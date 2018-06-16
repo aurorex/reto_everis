@@ -1,9 +1,11 @@
 header {
     background: rgb(131, 166, 0);
-    position: fixed;
+    /* position: fixed;
     width: 100%;
     z-index: 1000;
     top: 0%;
+    left: 0%;
+    right: 0%; */
 }
 .cont-img {
     width: 190px;

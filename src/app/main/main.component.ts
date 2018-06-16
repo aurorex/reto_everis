@@ -10,8 +10,13 @@ import  {map} from 'rxjs/operators';
 })
 export class MainComponent implements OnInit {
   public userEmail:string ;
-  public password:string ;
-  public perfil:boolean = false;
+  public password:string;
+  public checkbox:any;
+  public optionValue:boolean= false;
+  public option2:boolean=true;
+  public option3:boolean=true;
+
+
 
   itemsUrl:any;
   urlApi:any = 'http://backend-everis-retoeveris.a3c1.starter-us-west-1.openshiftapps.com/usuario';
@@ -29,7 +34,17 @@ export class MainComponent implements OnInit {
     console.log(this.password);
   }
 
+  option(box){
+    this.checkbox= box.value;
+    console.log(this.checkbox);
+
+  }
+
   ngOnInit() {
+    
+  }
+
+  button() {
     this.getUrlApi();
   }
 
@@ -41,12 +56,22 @@ export class MainComponent implements OnInit {
           this.itemsUrl = itemsUrl;
           console.log(this.itemsUrl);
           for(let i=0; i<itemsUrl.length;i++){
-            if(itemsUrl[i].email === this.userEmail && itemsUrl[i].password === this.password){
-              console.log('eres integrante');
-              
+            if(itemsUrl[i].email === this.userEmail && itemsUrl[i].password === this.password ){
+              console.log('bienvenido');
+              this.optionValue = true;
+              this.option2 = false;
+              this.option3 = false;
+
+
             }
-            // console.log(this.userEmail = itemsUrl[i].email) ;
-            // console.log(this.password = itemsUrl[i].password);
+            else {
+              //  console.log('bienvenido2');
+               this.optionValue = false;
+               this.option3 = true;
+               this.option2 = true;
+
+            }
+          
           }
           
         }

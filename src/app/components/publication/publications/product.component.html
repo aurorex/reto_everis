@@ -1,58 +1,99 @@
-
 <div class="card mt-3 mb-3">
   <div class="card-body">
     <form #productForm="ngForm" (ng-submit)="onSubmit(productForm)">
+      <p class="text-center">INFORMACION DEL PROYECTO</p>
       <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="productService.selectedProduct.$key"/>
          <div class="form-group">
-          <input
+          <p [innerHTML]="'nombre del proyecto: ' + itemsUrl[0].nombre"
            type="text"
            class="form-control"
            name="category"
            #name="ngModel"
            [(ngModel)]="productService.selectedProduct.category"
            placeholder="Nombre del Proyecto"
-           />
+           ></p>
         </div> 
         <div class="form-group">
-            <input
+            <p [innerHTML]="'cliente: ' +itemsUrl[0].cliente"
              type="text"
              class="form-control"
              name="name"
              #name="ngModel"
              [(ngModel)]="productService.selectedProduct.name"
              placeholder="Area al que pertenece"
-             />
+             ></p>
           </div>
            <div class="form-group">
-              <input
+              <p [innerHTML]="'objetivo: ' +itemsUrl[0].objetivo"
                type="text"
                class="form-control"
                name="price"
                #name="ngModel"
                [(ngModel)]="productService.selectedProduct.price"
                placeholder="Fecha de Entrega"
-               />
+               ></p>
             </div>
             <div class="form-group">
-                <input
+                <p [innerHTML]="'responsable: ' +itemsUrl[0].responsable"
                  type="text"
                  class="form-control"
                  name="location"
                  #name="ngModel"
                  [(ngModel)]="productService.selectedProduct.location"
                  placeholder="Sede"
-                 />
+                 ></p>
               </div>
-            <div class="form-group text-center">
-              <button class="btn btn-secondary mr-2" type="submit" (click)="onSubmit(productForm)">
-                <i class="fas fa-plus-circle"></i>
-                Publicar
-              </button>
-              <button class="btn btn-secondary " type="reset" (click)="resetForm(productForm)">
-                  <i class="fas fa-sync-alt"></i>
-                  Reset
-                </button>
-            </div>
+              <div class="form-group">
+                  <p [innerHTML]="'linea de servicio: ' +itemsUrl[0].lineaServicio"
+                   type="text"
+                   class="form-control"
+                   name="location"
+                   #name="ngModel"
+                   [(ngModel)]="productService.selectedProduct.location"
+                   placeholder="Sede"
+                   ></p>
+                </div>
+                <div class="form-group">
+                    <p [innerHTML]="'unidad: ' +itemsUrl[0].unidad"
+                     type="text"
+                     class="form-control"
+                     name="location"
+                     #name="ngModel"
+                     [(ngModel)]="productService.selectedProduct.location"
+                     placeholder="Sede"
+                     ></p>
+                  </div>
+                  <div class="form-group">
+                      <p [innerHTML]="'ubicación: ' +itemsUrl[0].ubicacion"
+                       type="text"
+                       class="form-control"
+                       name="location"
+                       #name="ngModel"
+                       [(ngModel)]="productService.selectedProduct.location"
+                       placeholder="Sede"
+                       ></p>
+                    </div>
+                    <div class="form-group">
+                        <p [innerHTML]="'inicio: ' +itemsUrl[0].fechaInicio"
+                         type="text"
+                         class="form-control"
+                         name="location"
+                         #name="ngModel"
+                         [(ngModel)]="productService.selectedProduct.location"
+                         placeholder="Sede"
+                         ></p>
+                      </div>
+                      <div class="form-group">
+                          <p [innerHTML]="'fin: ' +itemsUrl[0].fechaFin"
+                           type="text"
+                           class="form-control"
+                           name="location"
+                           #name="ngModel"
+                           [(ngModel)]="productService.selectedProduct.location"
+                           placeholder="Sede"
+                           ></p>
+                        </div>
+            
     </form>
   </div>
 </div>
