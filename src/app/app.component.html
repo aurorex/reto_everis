@@ -1,38 +1,75 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<app-header></app-header>
-<main class="container-fluid margen">
-<div class="row ">
-<div class="col-md-3  mt-3  ">
-<nav class="card bg-white ">
-    <div class="card-body h-text">
-          <div>
-                <a routerLink="/" routerLinkactive="active">Home</a>
-          </div>
-          <div>
-                <a routerLink="login">Integrate al Equipo</a>
-          </div>
-          <div>
-                <a routerLink="register">Tus Beneficios</a>
-          </div>
-          <div>
-                <a routerLink="register">Conocenos</a>
-          </div>
-             
-    </div>
+<section >
+    <main id="section" [innerHTML]="option2" class="container-fluid margen">
+    <app-header></app-header>
     
-</nav>
-<hr>
+    <div class="row ">
+    <div class="col-md-3  mt-3  ">
+    <nav class="card bg-white ">
+        <div class="card-body h-text">
+              <div>
+                    <a routerLink="/" routerLinkactive="active">Home</a>
+              </div>
+              <div>
+                    <a routerLink="login">Integrate al Equipo</a>
+              </div>
+              <div>
+                    <a routerLink="register">Tus Beneficios</a>
+              </div>
+              <div>
+                    <a routerLink="register">Conocenos</a>
+              </div>
+                 
+        </div>
+        
+    </nav>
+    <hr>
+    
+    </div>
+    <div class="col-md-6 mt-4 ">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="col-md-3">
+        <app-products></app-products>
+    </div>
+    </div>
+    </main>
 
-</div>
-<div class="col-md-6 mt-4 ">
-    <router-outlet></router-outlet>
-</div>
-<div class="col-md-3">
-    <app-products></app-products>
-</div>
-</div>
+</section>
+
+
+<main id="main" [innerHTML]="option1">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 slogan">
+          <img src="http://www.sisnet360.com/media/img/logo-everis.png" alt="">
+          <h1>Plataforma</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <section>
+    <div class="container container-btn">
+      <div class="row box-button">
+        <div class="col-12 text-center">
+          <input (keyup)="email(inputEmail)" #inputEmail type="text" class="form-control" placeholder="username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <br>
+          <input (keyup)="pass(inputPassword)" #inputPassword type="text" class="form-control" placeholder="pasword" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <br>
+        </div>
+        <br>
+        <div class="col-12 text-center">
+          <button class="btn btn-lg btn-dark" (click)="button()">INGRESAR</button>
+        </div>
+        <!-- <p [innerHTML]="itemsUrl['0'].name"></p> -->
+      </div>
+    </div>
+  </section>
 </main>
-
 <!-- <app-sidemenu></app-sidemenu> -->
 
 <!-- <app-home></app-home> -->
@@ -40,6 +77,6 @@
 
 <!-- Probando el el single page -->
 <!-- componente main -->
-<main-app></main-app>
+<!-- <main-app></main-app> -->
 
 
