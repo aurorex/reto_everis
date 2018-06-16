@@ -1,0 +1,40 @@
+<app-header></app-header>
+<main class="home container-fluid margen" >
+    <div class="row ">
+      
+    <div class="col-md-2  mt-3  ">
+    <nav class="card bg-white ">
+        <div class="card-body h-text">
+              <div>
+                    <a routerLink="/" routerLinkactive="active">Home</a>
+              </div>
+              <div>
+                    <a routerLink="login">Integrate al Equipo</a>
+              </div>
+              <div>
+                    <a routerLink="register">Tus Beneficios</a>
+              </div>
+              <div>
+                    <a routerLink="register">Conocenos</a>
+              </div>
+                 
+        </div>
+        
+    </nav>
+    <hr>
+    
+    </div>
+    
+    <div class="col-md-5 mt-4 ">
+        <router-outlet></router-outlet>
+        
+        
+
+    </div>
+    <div class="col-md-5 mt-4 ">
+       <app-products></app-products>
+    </div>
+
+  
+    </div>
+  </main>

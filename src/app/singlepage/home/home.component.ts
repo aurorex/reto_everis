@@ -8,9 +8,9 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-   coment:string;
-   array : string
-  
+  public coment:string;
+  // public arrComent:string;
+
   coments(comentario){
     this.coment = comentario.value;
     

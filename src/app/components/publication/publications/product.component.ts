@@ -6,6 +6,8 @@ import { ProductService } from '../../../services/project.service'
 
 import { NgForm } from '@angular/forms'
 import { Product } from '../../../models/product';
+import { HttpClient } from '@angular/common/http';
+import  {map} from 'rxjs/operators';
 
 // Product Class 
 
@@ -18,12 +20,42 @@ import { Product } from '../../../models/product';
 })
 export class ProductComponent implements OnInit {
 
-  constructor(private productService: ProductService) { }
+  itemsUrl:any;
+  urlApi:any = 'http://backend-everis-retoeveris.a3c1.starter-us-west-1.openshiftapps.com/proyecto';
+
+
+  constructor(private productService: ProductService, private http: HttpClient) { }
 
   ngOnInit() {
+    this.getUrlApi();
     this.productService.getProducts();
     this.resetForm();
   }
+
+  getUrlApi():void{
+    console.log(this.urlApi);
+    this.itemsUrlServiceGetUrlApi()
+      .subscribe(
+        itemsUrl => {
+          this.itemsUrl = itemsUrl;
+          console.log(this.itemsUrl);
+          for(let i=0; i<itemsUrl.length;i++){
+            itemsUrl[i].nombre;
+            itemsUrl[i].cliente;
+            itemsUrl[i].objetivo;
+          }
+          
+        }
+      )
+  }
+
+  itemsUrlServiceGetUrlApi(){
+    return this.http
+      .get<any[]>(this.urlApi)
+      .pipe(map(data => data));
+
+  }
+
 
   onSubmit(productForm: NgForm) {
     if(productForm.value.$key == null)
