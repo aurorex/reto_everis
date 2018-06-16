@@ -1,27 +1,30 @@
-# RetoEverisNg5
+# Reto Everis
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+El Reto everis consiste en una plataforma que de solucion 
+que permita que los profesionales que lleguen a un nuevo proyecto
+puedan conocer a sus compañeros de trabajo, el despliegue completo de everis y
+cliente en general; así generar una red de apoyo en forma más rápida y poder
+integrarse lo antes posible en su asignación.
 
-## Development server
+Para ello nos basamos en los siguientes puntos a desarrollar:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
++ Diseño Responsivo
++ Desarrollo basado en angular
++ Interacción mediante API (Servicios REST)
 
-## Code scaffolding
+## Herramientas utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> HTML5
+> CSS3
+> FRAMEWORK BOOTSTRAP 4
+> FRAMEWORK DE JS ANGULAR 5
+> FIREBASE 
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+### Producto desarrollado por :
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
++ Aurora Vasquez
++ Valeria Valles
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Producto desarrollado para Laboratoria

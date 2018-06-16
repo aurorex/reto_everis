@@ -55,6 +55,7 @@ const routeConfig:Route[] = [
     path:'**',
     component:NotfoundComponent
   }
+  
 ];
 
 @NgModule({

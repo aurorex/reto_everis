@@ -8,16 +8,22 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  public coment:string;
+   coment:string;
+   array : string
   
   coments(comentario){
     this.coment = comentario.value;
+    
     console.log(this.coment);
   }
+   
+    publish(){
+    const arrComent=[]
+      arrComent.push(this.coment);
+      console.log(arrComent);
 
-  // publish(){
-  //   arrComent = this.coment
-  // }
+      
+    }
 
   todos: [
     { 
