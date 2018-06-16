@@ -38,7 +38,7 @@ import { HeaderComponent } from './singlepage/header/header.component';
 import { SidemenuComponent } from './singlepage/sidemenu/sidemenu.component';
 import { Home2Component } from './home2/home2.component';
 import { CardComponent } from './card/card.component';
-// import { Route } from '@angular/compiler/src/core';
+//import { Route } from '@angular/compiler/src/core';
 
 const routeConfig:Route[] = [
   {
