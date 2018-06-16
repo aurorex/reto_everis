@@ -13,8 +13,17 @@ export class HomeComponent implements OnInit {
 
   coments(comentario){
     this.coment = comentario.value;
+    
     console.log(this.coment);
   }
+   
+    publish(){
+    const arrComent=[]
+      arrComent.push(this.coment);
+      console.log(arrComent);
+
+      
+    }
 
   todos: [
     { 
